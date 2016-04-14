@@ -7,7 +7,6 @@ from mechanize import _http
 
 class Api:
     appid = '5415093'
-    appkey = 'c1kU8sLXT8xAVJ5VTsj7'
     token = None
     query_pattern = 'https://api.vk.com/method/%s?%s&access_token='
 
