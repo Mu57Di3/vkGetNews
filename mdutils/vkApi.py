@@ -47,7 +47,7 @@ class Api:
             if tp[0] == 'access_token':
                 self.token = tp[1]
                 self.query_pattern += self.token
-                if testmode :
+                if testmode:
                     self.query_pattern += '&test_mode=1'
                 break
 

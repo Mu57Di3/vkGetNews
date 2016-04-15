@@ -24,5 +24,5 @@ if __name__ == "__main__":
     with open('conf.json') as f:
         conf = f.read()
     conf = json.loads(conf)
-    app = App(conf['appId'],conf['login'],conf['password'])
+    app = App(conf['appId'], conf['login'], conf['password'])
     print app.getPosts(10)
