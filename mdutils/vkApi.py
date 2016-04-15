@@ -35,8 +35,9 @@ class Api:
         self.br.form['pass'] = password
         self.br.submit()
 
-        # self.br.select_form(nr=0)
-        # self.br.submit()
+        if len(list(self.br.forms())) > 0:
+            self.br.select_form(nr=0)
+            self.br.submit()
 
         params = urlparse.urlparse(self.br.geturl()).fragment
         params = params.split('&')
