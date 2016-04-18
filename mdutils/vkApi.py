@@ -1,6 +1,6 @@
 # -*- coding: utf-8
 
-import cookielib, urlparse, json
+import cookielib, urlparse
 from mechanize import Browser
 from mechanize import _http
 
